@@ -1,0 +1,28 @@
+:root {
+  /* colors — extracted from the Figma "ds" palette */
+  --color-ink: #232323;
+  --color-charcoal: #4c4c4c;
+  --color-taupe: #ada69b;
+  --color-sand: #c1baac;
+  --color-mist: #d9d9d9;
+  --color-white: #ffffff;
+
+  --color-text: var(--color-ink);
+  --color-text-inverted: var(--color-mist);
+  --color-text-muted: var(--color-sand);
+
+  /* fonts */
+  --font-display: "Irish Grover", cursive;
+  --font-heading: "MedievalSharp", serif;
+  --font-nav: "Anton", sans-serif;
+
+  /* layout */
+  --page-max-width: 1400px;
+  --nav-height: 102px;
+
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-5: 4rem;
+}

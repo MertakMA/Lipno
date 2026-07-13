@@ -1,0 +1,33 @@
+.info-block {
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 12px;
+  padding: var(--space-3);
+}
+
+.info-block__heading {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  color: var(--color-ink);
+  margin-bottom: var(--space-2);
+}
+
+.info-block__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.info-block__list li {
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  color: var(--color-ink);
+  line-height: 1.5;
+  padding-left: 1.1em;
+  position: relative;
+}
+
+.info-block__list li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+}

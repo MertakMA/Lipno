@@ -1,0 +1,73 @@
+.day-tabs {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.day-tabs__tab {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  color: var(--color-ink);
+  background: var(--color-sand);
+  border: none;
+  border-radius: 6px;
+  padding: 0.45rem 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  white-space: nowrap;
+}
+
+.day-tabs__tab.is-active {
+  background: var(--color-mist);
+}
+
+.day-detail {
+  background: var(--color-sand);
+  padding: var(--space-5) clamp(1rem, 5vw, 2.5rem);
+}
+
+.day-detail__inner {
+  max-width: 900px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+#info-root{
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+
+}
+
+.day-detail__header {
+  text-align: center;
+}
+
+.day-detail__roman {
+    font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: var(--color-ink);
+  display: block;
+}
+
+.day-detail__title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-ink);
+}
+
+.day-detail__photo {
+  width: 100%;
+  height: 360px;
+  border-radius: 16px;
+  background: var(--color-white);
+  object-fit: contain;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+

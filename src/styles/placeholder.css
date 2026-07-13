@@ -1,0 +1,22 @@
+.placeholder {
+  background: var(--color-charcoal);
+  min-height: max(60vh, calc(100vh - var(--nav-height) - 11rem));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-5) clamp(1rem, 5vw, 2.5rem);
+}
+
+.placeholder__title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  color: var(--color-mist);
+}
+
+.placeholder__text {
+  font-family: system-ui, sans-serif;
+  color: var(--color-sand);
+  margin-top: var(--space-2);
+  font-size: 1.1rem;
+}

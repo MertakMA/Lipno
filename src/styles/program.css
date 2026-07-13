@@ -1,0 +1,81 @@
+.program-page {
+  background: var(--color-taupe);
+}
+
+.program-page__frieze {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.program-hero {
+  padding-block: var(--space-4);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.program-hero__frame {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: min(90vw, 46rem);
+}
+
+.program-hero__frame img {
+  width: 100%;
+  display: block;
+}
+
+.program-hero__title {
+  position: absolute;
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  color: var(--color-ink);
+}
+
+.day-grid {
+  display: flex;
+  gap: clamp(0.5rem, 2vw, 1.5rem);
+  padding: 0 clamp(1rem, 5vw, 2.5rem) var(--space-5);
+  max-width: var(--page-max-width);
+  margin-inline: auto;
+}
+
+.day-card {
+  flex: 1 1 0;
+  position: relative;
+  aspect-ratio: 823 / 1077;
+  min-width: 0;
+}
+
+.day-card__frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.day-card__image {
+  position: absolute;
+  left: 17%;
+  top: 15%;
+  width: 66%;
+  height: 58%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.day-card__label {
+  position: absolute;
+  left: 28%;
+  width: 44%;
+  top: 90.5%;
+  transform: translateY(-50%);
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: clamp(0.85rem, 1.6vw, 1.3rem);
+  color: var(--color-ink);
+}

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expedice Lipno 2026</title>
+    <meta name="description" content="Expedice Lipno 2026 — pětidenní putování kolem Lipenského jezera." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Irish+Grover&family=MedievalSharp&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="navbar-root"></div>
+
+    <main>
+      <section class="hero">
+        <div class="hero__bg">
+          <img src="/images/landing/hero-bg.jpg" alt="Lipenské jezero a hrad ve večerní mlze" />
+        </div>
+        <div class="hero__content">
+          <p class="hero__eyebrow">EXPEDICE</p>
+          <h1 class="hero__title">LIPNO</h1>
+          <div class="countdown" id="countdown-root"></div>
+        </div>
+      </section>
+
+      <section class="story">
+        <div class="story__inner">
+          <div class="story__milestone">
+            <div class="story__media">
+              <img src="/images/landing/jezero-big.svg" alt="Ilustrace jezera" />
+            </div>
+            <p class="story__caption">Nejdřív bylo jezero ...</p>
+          </div>
+
+          <div class="story__milestone story__milestone--reverse">
+            <div class="story__media">
+              <img src="/images/landing/vesnice-1.svg" alt="Ilustrace vesnice" />
+            </div>
+            <p class="story__caption">Teda vesnice ...</p>
+          </div>
+
+          <div class="story__milestone">
+            <div class="story__media story__media--layered">
+              <img src="/images/landing/vesnice-2.svg" alt="" class="story__layer-back" />
+              <img src="/images/landing/jezero.svg" alt="Vesnice zatopená jezerem" class="story__layer-front" />
+            </div>
+            <p class="story__caption">A pak už i to jezero ...</p>
+          </div>
+
+          <div class="story__milestone story__milestone--reverse">
+            <div class="story__people">
+              <img src="/images/landing/clovek-1.svg" alt="" />
+              <div class="story__person-with-hat">
+                <img src="/images/landing/clovek-1.svg" alt="" />
+                <img src="/images/landing/hat-icon.png" class="story__hat" alt="" />
+              </div>
+              <img src="/images/landing/clovek-2.svg" alt="" />
+              <img src="/images/landing/clovek-3.svg" alt="" />
+            </div>
+            <p class="story__caption">A tam my jedeme ...</p>
+          </div>
+
+          <div class="story__milestone">
+            <div class="story__map">
+              <img src="/images/landing/austria-map.png" alt="Mapa Rakouska" />
+              <img src="/images/landing/map-outline.svg" class="story__map-line" alt="" />
+              <span class="story__map-label">Rakousko</span>
+            </div>
+            <p class="story__caption">Cca sem ...</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="landing-end">
+        <h2 class="landing-end__title">KONEC</h2>
+        <div class="landing-end__row">
+          <a href="/" class="landing-end__logo">LIPNO</a>
+          <p class="landing-end__byline">- 2026 -<br />Mertic</p>
+          <button type="button" class="landing-end__top" aria-label="Nahoru">
+            <img src="/images/shared/arrow-up.svg" alt="" />
+          </button>
+        </div>
+      </footer>
+    </main>
+
+    <script type="module" src="/src/pages/landing.ts"></script>
+  </body>
+</html>
