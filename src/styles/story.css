@@ -109,17 +109,18 @@
 .story__map-line {
   position: absolute !important;
   width: 26% !important;
-  left: -2%;
-  top: 10%;
+  left: 10%;
+  top: 50%;
   opacity: 0.7;
+  scale: 1.5;
 }
 
 .story__map-label {
   position: absolute;
-  left: 5%;
-  top: 30%;
+  left: 10%;
+  top: 65%;
   width: 20%;
-  transform: rotate(-70deg);
+  transform: rotate(50deg);
   transform-origin: left top;
   font-family: var(--font-display);
   font-size: clamp(1.1rem, 2.4vw, 1.6rem);
