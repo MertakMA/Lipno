@@ -2,7 +2,7 @@ export type NavKey = "program" | "ucastnici" | "dobre-vedet" | null;
 
 const NAV_ITEMS: { key: Exclude<NavKey, null>; label: string; href: string }[] = [
   { key: "program", label: "PROGRAM", href: "/program.html" },
-  { key: "ucastnici", label: "PARTA", href: "/ucastnici.html" },
+  { key: "ucastnici", label: "CREW", href: "/ucastnici.html" },
   { key: "dobre-vedet", label: "DOBRÉ VĚDĚT", href: "/dobre-vedet.html" },
 ];
 
