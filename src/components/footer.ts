@@ -2,10 +2,10 @@ export function renderFooter(): string {
   return `
     <footer class="site-footer">
       <div class="site-footer__inner">
-        <a href="/" class="site-footer__logo">LIPNO</a>
+        <a href="index.html" class="site-footer__logo">LIPNO</a>
         <p class="site-footer__byline">- 2026 -<br />Mertic</p>
         <button type="button" class="site-footer__top" aria-label="Nahoru">
-          <img src="/images/shared/arrow-up.svg" alt="" />
+          <img src="images/shared/arrow-up.svg" alt="" />
         </button>
       </div>
     </footer>`;

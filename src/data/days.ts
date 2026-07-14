@@ -16,7 +16,7 @@ export const days: Day[] = [
     id: 1,
     roman: "Den I.",
     title: "Příjezd a Horní Planá",
-    photo: "/images/program/day-1-photo.png",
+    photo: "images/program/day-1-photo.png",
     sections: [
       {
         heading: "Doprava",
@@ -40,7 +40,7 @@ export const days: Day[] = [
     id: 2,
     roman: "Den II.",
     title: "Třístoličník",
-    photo: "/images/program/day-2-photo.png",
+    photo: "images/program/day-2-photo.png",
     sections: [
       {
         heading: "Doprava",
@@ -59,7 +59,7 @@ export const days: Day[] = [
     id: 3,
     roman: "Den III.",
     title: "Varianta Linz / varianta Rožmberk",
-    photo: "/images/program/day-4-photo.png",
+    photo: "images/program/day-4-photo.png",
     sections: [
       {
         heading: "Společný začátek",
@@ -104,7 +104,7 @@ export const days: Day[] = [
     id: 4,
     roman: "Den IV.",
     title: "Frymburk a Vítkův Kámen",
-    photo: "/images/program/day-3-photo.png",
+    photo: "images/program/day-3-photo.png",
     sections: [
       {
         heading: "Doprava",
@@ -127,7 +127,7 @@ export const days: Day[] = [
     id: 5,
     roman: "Den V.",
     title: "Rožmberk / návrat",
-    photo: "/images/program/day-5-photo.png",
+    photo: "images/program/day-5-photo.png",
     sections: [
       {
         heading: "Doprava",

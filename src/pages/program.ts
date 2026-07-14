@@ -16,9 +16,9 @@ if (grid) {
   grid.innerHTML = days
     .map(
       (day) => `
-      <a class="day-card" href="/den.html?day=${day.id}">
+      <a class="day-card" href="den.html?day=${day.id}">
         <img class="day-card__image" src="${day.photo}" alt="${day.title}" />
-        <img class="day-card__frame" src="/images/program/day-card-bg.png" alt="" />
+        <img class="day-card__frame" src="images/program/day-card-bg.png" alt="" />
         <span class="day-card__label">${day.roman}</span>
       </a>`
     )

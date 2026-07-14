@@ -1,9 +1,9 @@
 export type NavKey = "program" | "ucastnici" | "dobre-vedet" | null;
 
 const NAV_ITEMS: { key: Exclude<NavKey, null>; label: string; href: string }[] = [
-  { key: "program", label: "PROGRAM", href: "/program.html" },
-  { key: "ucastnici", label: "CREW", href: "/ucastnici.html" },
-  { key: "dobre-vedet", label: "DOBRÉ VĚDĚT", href: "/dobre-vedet.html" },
+  { key: "program", label: "PROGRAM", href: "program.html" },
+  { key: "ucastnici", label: "CREW", href: "ucastnici.html" },
+  { key: "dobre-vedet", label: "DOBRÉ VĚDĚT", href: "dobre-vedet.html" },
 ];
 
 export function renderNavbar(active: NavKey): string {
@@ -17,7 +17,7 @@ export function renderNavbar(active: NavKey): string {
   return `
     <header class="navbar">
       <div class="navbar__inner">
-        <a href="/" class="navbar__logo">LIPNO</a>
+        <a href="index.html" class="navbar__logo">LIPNO</a>
         <nav class="navbar__nav" aria-label="Hlavní navigace">${links}</nav>
       </div>
     </header>`;
