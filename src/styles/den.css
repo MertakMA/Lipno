@@ -4,6 +4,22 @@
   flex-wrap: wrap;
 }
 
+@media (max-width: 900px) {
+  .day-tabs {
+    flex: 1 1 100%;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+
+  /* .day-tabs only exists on den.html, right before .navbar__nav — use it
+     to scope this centering to that page without affecting others. */
+  .day-tabs ~ .navbar__nav {
+    flex: 1 1 100%;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+}
+
 .day-tabs__tab {
   font-family: var(--font-heading);
   font-size: 0.85rem;
