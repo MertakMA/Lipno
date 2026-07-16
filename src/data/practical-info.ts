@@ -20,6 +20,7 @@ export const practicalInfo: DaySection[] = [
     heading: "Podtrženo sečteno",
     items: [
       "Za veškeré cesty a ubytování bychom se měli vejít do 1800 kč / osoba",
+      "Ten, kdo bude mít 14 denní prázdninovou jízdenku se vejde do 1200 kč / osoba",
     ]
   },
   {
