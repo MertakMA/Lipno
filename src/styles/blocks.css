@@ -31,3 +31,23 @@
   position: absolute;
   left: 0;
 }
+
+.info-block__list li.info-block__map-only {
+  list-style: none;
+  padding-left: 0;
+}
+
+.info-block__list li.info-block__map-only::before {
+  content: none;
+}
+
+.info-block__map {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border: none;
+  border-radius: 8px;
+  margin-top: 0.6rem;
+  margin-inline: auto;
+}

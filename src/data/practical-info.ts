@@ -5,7 +5,6 @@ export const practicalInfo: DaySection[] = [
     heading: "Basic info",
     items: [
       "Jedeme od pondělí 3.8. do pátku 7.8.",
-      "Spát budeme ve stanech v kempu U Kukačků u Horní Plané"
     ]
   },
   {
@@ -31,5 +30,13 @@ export const practicalInfo: DaySection[] = [
       "Spacák a karimatka — klasika na přežití noci",
       "Pláštěnka či něco nepromokavého",
     ],
+  },
+  {
+    heading: "Mapa tripu",
+    items: [
+      {
+        mapUrl: "https://mapy.com/s/gojajevula",
+      }
+    ]
   },
 ];

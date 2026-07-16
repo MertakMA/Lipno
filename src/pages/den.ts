@@ -7,7 +7,7 @@ import "../styles/blocks.css";
 
 import { mountNavbar } from "../components/navbar";
 import { mountFooter } from "../components/footer";
-import { days, getDay } from "../data/days";
+import { days, getDay, renderDayItem } from "../data/days";
 
 mountNavbar("program");
 mountFooter();
@@ -52,7 +52,7 @@ function renderDetail(activeId: number): void {
         <section class="info-block">
           <h2 class="info-block__heading">${section.heading}</h2>
           <ul class="info-block__list">
-            ${section.items.map((item) => `<li>${item}</li>`).join("")}
+            ${section.items.map(renderDayItem).join("")}
           </ul>
         </section>`
       )

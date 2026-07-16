@@ -1,6 +1,52 @@
+export interface DayItemWithMap {
+  text: string;
+  mapUrl: string;
+  mapWidth?: number;
+  mapHeight?: number;
+}
+
+export interface DayItemMap {
+  mapUrl: string;
+  mapWidth?: number;
+  mapHeight?: number;
+}
+
+export type DayItem = string | DayItemWithMap | DayItemMap;
+
 export interface DaySection {
   heading: string;
-  items: string[];
+  items: DayItem[];
+}
+
+export function renderDayItem(item: DayItem): string {
+  if (typeof item === "string") {
+    return `<li>${item}</li>`;
+  }
+  const width = item.mapWidth ?? 700;
+  const height = item.mapHeight ?? 466;
+  if (!("text" in item)) {
+    return `
+    <li class="info-block__map-only">
+      <iframe
+        class="info-block__map"
+        style="aspect-ratio: ${width} / ${height};"
+        src="${item.mapUrl}"
+        loading="lazy"
+        frameborder="0"
+      ></iframe>
+    </li>`;
+  }
+  return `
+    <li>
+      ${item.text}
+      <iframe
+        class="info-block__map"
+        style="aspect-ratio: ${width} / ${height};"
+        src="${item.mapUrl}"
+        loading="lazy"
+        frameborder="0"
+      ></iframe>
+    </li>`;
 }
 
 export interface Day {
@@ -21,16 +67,24 @@ export const days: Day[] = [
       {
         heading: "Doprava",
         items: [
-          "Vlak 6:09 Přelouč → 9:54 Český Krumlov — 246 Kč / osoba",
-          "Vlak 13:00 Český Krumlov → 13:53 Horní Planá — 46 Kč / osoba",
-          "Chůze 13:53 Horní Planá → 15:00 kemp U Kukačků",
+          "Vlak 7:09 Přelouč → 10:54 Domoradice (Český Krumlov) — 300 Kč / osoba",
+          "Bus 11:43 Český Krumlov, Domoradice (zastávka na nákup) → 11:55 Český Krumlov, aut. nád.",
+          "Bus 13:50 Český Krumlov, aut. nád. (zastávka na jídlo)→ 14:32 Horní Planá",
+          {
+            text: "Chůze 14:32 Horní Planá → 15:00 kemp U Kukačků",
+            mapUrl: "https://mapy.com/s/bojovehezu",
+            mapWidth: 700,
+            mapHeight: 466,
+          },
         ],
       },
       {
         heading: "Program",
         items: [
-          "Trasa: kolečko kolem Horní Plané přes rozhledny",
-          "Délka: cca 3 h",
+          {
+            text: "Trasa: kolečko kolem Horní Plané přes rozhledny",
+            mapUrl: "https://mapy.com/s/kakabepaku",
+          },
           "Nákup zásob v Horní Plané — obchod zavírá v 19:00",
         ],
       },
@@ -49,8 +103,10 @@ export const days: Day[] = [
       {
         heading: "Program",
         items: [
-          "Trasa: Nové Údolí → Třístoličník → Plechý → kemp U Kukačků",
-          "Délka: cca 8 h",
+          {
+            text: "Trasa: Nové Údolí → Třístoličník → Plechý → kemp U Kukačků",
+            mapUrl: "https://mapy.com/s/daberucede",
+          },
         ],
       },
     ],
@@ -85,15 +141,19 @@ export const days: Day[] = [
         heading: "Návrat — skupina B",
         items: [
           "Vlak 13:30 Linz / Donau Urfahr → 14:59 Aigen-Schlägl — 194 Kč / osoba",
-          "Trasa: Aigen-Schlägl → rozhledna → kemp U Kukačků",
-          "Délka: cca 5 h",
+          {
+            text: "Trasa: Aigen-Schlägl → rozhledna → kemp U Kukačků",
+            mapUrl: "https://mapy.com/s/fevedapapa",
+          },
         ],
       },
       {
         heading: "Varianta B — bez Linze",
         items: [
-          "Trasa: Vyšší Brod → hrad Rožmberk → Rybník",
-          "Délka: cca 5 h",
+          {
+            text: "Trasa: Vyšší Brod → hrad Rožmberk → Rybník",
+            mapUrl: "https://mapy.com/s/mokofunonu",
+          },
           "Vlak 15:04 Rybník → 15:26 Vyšší Brod klášter",
           "Bus 15:38 Vyšší Brod žel. st. → 16:26 Horní Planá",
         ],
@@ -113,7 +173,10 @@ export const days: Day[] = [
       {
         heading: "Program",
         items: [
-          "Trasa: Frymburk → Vítkův Kámen → zpět",
+          {
+            text: "Trasa: Frymburk → Vítkův Kámen → zpět",
+            mapUrl: "https://mapy.com/s/bekogupeha",
+          },
           "Přívoz tam: 9:00, přívoz zpět: 15:05 — 70 Kč / osoba",
         ],
       },
@@ -136,8 +199,10 @@ export const days: Day[] = [
       {
         heading: "Program podle 3. dne — pokud byl Linz",
         items: [
-          "Trasa: Vyšší Brod → hrad Rožmberk → Rybník",
-          "Délka: cca 5 h",
+          {
+            text: "Trasa: Vyšší Brod → hrad Rožmberk → Rybník",
+            mapUrl: "https://mapy.com/s/mokofunonu",
+          },
           "Vlak 15:08 Rybník → 19:52 Přelouč — 265 Kč / osoba",
         ],
       },

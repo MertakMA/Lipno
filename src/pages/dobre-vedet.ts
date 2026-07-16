@@ -8,6 +8,7 @@ import "../styles/blocks.css";
 import { mountNavbar } from "../components/navbar";
 import { mountFooter } from "../components/footer";
 import { practicalInfo } from "../data/practical-info";
+import { renderDayItem } from "../data/days";
 
 mountNavbar("dobre-vedet");
 mountFooter();
@@ -20,7 +21,7 @@ if (root) {
       <section class="info-block">
         <h2 class="info-block__heading">${section.heading}</h2>
         <ul class="info-block__list">
-          ${section.items.map((item) => `<li>${item}</li>`).join("")}
+          ${section.items.map(renderDayItem).join("")}
         </ul>
       </section>`
     )
