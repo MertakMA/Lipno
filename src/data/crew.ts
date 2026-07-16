@@ -14,19 +14,19 @@ export const crewGroups: CrewGroup[] = [
   {
     title: "Žebráci",
     members: [
-      { name: "Účastník 1", role: "Role", avatar: "images/landing/clovek-1.svg" },
-      { name: "Účastník 2", role: "Role", avatar: "images/landing/clovek-2.svg" },
-      { name: "Účastník 3", role: "Role", avatar: "images/landing/clovek-3.svg" },
-      { name: "Účastník 4", role: "Role", avatar: "images/landing/clovek-1.svg" },
-      { name: "Účastník 5", role: "Role", avatar: "images/landing/clovek-2.svg" },
+      { name: "Matěj", role: "Role", avatar: "images/landing/clovek-1.svg" },
+      { name: "Štěpán", role: "Role", avatar: "images/landing/clovek-2.svg" },
+      { name: "Šutovec", role: "Role", avatar: "images/landing/clovek-3.svg" },
+      { name: "Jáchym", role: "Role", avatar: "images/landing/clovek-1.svg" },
+      { name: "Vašek", role: "Role", avatar: "images/landing/clovek-2.svg" },
     ],
   },
   {
     title: "Protektorát",
     members: [
-      { name: "Účastník 6", role: "Role", avatar: "images/landing/clovek-3.svg" },
-      { name: "Účastník 7", role: "Role", avatar: "images/landing/clovek-1.svg" },
-      { name: "Účastník 8", role: "Role", avatar: "images/landing/clovek-2.svg" },
+      { name: "Kája", role: "Role", avatar: "images/landing/clovek-3.svg" },
+      { name: "Natka", role: "Role", avatar: "images/landing/clovek-1.svg" },
+      { name: "Anežka", role: "Role", avatar: "images/landing/clovek-2.svg" },
     ],
   },
 ];
